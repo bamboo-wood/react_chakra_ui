@@ -6,6 +6,6 @@ function App() {
       <Button colorScheme="teal">Hello World</Button>
     </ChakraProvider>
   );
-}
+} //
 
 export default App;
