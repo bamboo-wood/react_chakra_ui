@@ -11,6 +11,9 @@ import React, { FC, memo } from "react";
 type Props = {
   isOpen: boolean;
   onClose: () => void;
+  onClickHome: () => void;
+  onClickUserManagement: () => void;
+  onClickSetting: () => void;
 };
 
 export const MenuDrawer: FC<Props> = memo((props) => {

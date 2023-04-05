@@ -7,6 +7,8 @@ type Props = {
 };
 
 export const HeaderLayout: FC<Props> = memo((props) => {
+  console.log("HeaderLayout");
+
   const { children } = props;
 
   return (
