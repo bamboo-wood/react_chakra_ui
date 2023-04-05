@@ -1,6 +1,7 @@
 import { FC, memo } from "react";
 
 import { Header } from "../organisms/layout/Header";
+import { Box } from "@chakra-ui/react";
 
 type Props = {
   children: React.ReactNode;
