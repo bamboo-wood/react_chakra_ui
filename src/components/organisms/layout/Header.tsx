@@ -15,7 +15,10 @@ export const Header: FC = memo(() => {
     () => navigate("/home/user_management"),
     [navigate]
   );
-  const onClickSetting = useCallback(() => navigate("/home/setting"), []);
+  const onClickSetting = useCallback(
+    () => navigate("/home/setting"),
+    [navigate]
+  );
 
   return (
     <>
