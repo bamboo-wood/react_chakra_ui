@@ -13,30 +13,17 @@ export const Router: FC = memo(() => {
     <Routes>
       <Route path="/" element={<Login />} />
       <Route
-        path="/home"
+        path="/home/*"
         element={
           <HeaderLayout>
-            <Home />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/user_management" element={<UserManagement />} />
+              <Route path="/setting" element={<Setting />} />
+            </Routes>
           </HeaderLayout>
         }
       />
-      <Route
-        path="/home/user_management"
-        element={
-          <HeaderLayout>
-            <UserManagement />
-          </HeaderLayout>
-        }
-      />
-      <Route
-        path="/home/setting"
-        element={
-          <HeaderLayout>
-            <Setting />
-          </HeaderLayout>
-        }
-      />
-
       <Route path="*" element={<Page404 />} />
     </Routes>
   );
